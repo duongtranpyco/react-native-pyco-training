@@ -51,4 +51,29 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
+
+  // logo
+  logo: {
+
+  },
+
+  // welcome image
+  welcomeImage: {
+
+  },
+
+  // welcome title
+  welcomeTitle: {
+
+  },
+
+  // welcome text,
+  welcomeText: {
+
+  },
+
+  // register button
+  registerButton: {
+    
+  }
 });
