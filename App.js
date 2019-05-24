@@ -7,7 +7,7 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, View, SafeAreaView, Text, Image, Dimensions } from 'react-native';
+import { StyleSheet, View, SafeAreaView, Text, Image, Dimensions, TouchableOpacity } from 'react-native';
 import { IMAGES } from './src/assets';
 
 export default class App extends Component {
@@ -51,6 +51,7 @@ export default class App extends Component {
 
   renderRegisterButton = () => {
     return (
+      <TouchableOpacity>
       <View style={styles.registerButton}>
         <Text style={styles.registerTitle}>
           Register with Phone
@@ -60,6 +61,7 @@ export default class App extends Component {
           style={styles.arrowRight}
         />
       </View>
+      </TouchableOpacity>
     );
   };
 
