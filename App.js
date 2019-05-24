@@ -9,11 +9,36 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 
-export default class App extends Component<Props> {
+export default class App extends Component {
+
+  renderLogo = () => {
+
+  };
+
+  renderWelcomeImage = () => {
+
+  };
+
+  renderWelcomeTitle = () => {
+
+  };
+
+  renderWelcomeText = () => {
+
+  };
+
+  renderRegisterButton = () => {
+
+  };
+
   render() {
     return (
       <View style={styles.container}>
-
+        {this.renderLogo()}
+        {this.renderWelcomeImage()}
+        {this.renderWelcomeTitle()}
+        {this.renderWelcomeText()}
+        {this.renderRegisterButton()}
       </View>
     );
   }
