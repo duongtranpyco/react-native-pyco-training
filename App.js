@@ -7,7 +7,7 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, View, SafeAreaView, Text, Image } from 'react-native';
+import { StyleSheet, View, SafeAreaView, Text, Image, Dimensions } from 'react-native';
 import { IMAGES } from './src/assets';
 
 export default class App extends Component {
@@ -24,9 +24,11 @@ export default class App extends Component {
 
   renderWelcomeImage = () => {
     return (
-      <View style={styles.welcomeImage}>
-
-      </View>
+      <Image
+        style={styles.welcomeImage}
+        source={IMAGES.welcome.image}
+        resizeMode={'contain'}
+      />
     )
   };
 
@@ -89,10 +91,10 @@ const styles = StyleSheet.create({
 
   // welcome image
   welcomeImage: {
-    width: 320,
+    width: Dimensions.get('window').width - 60,
     height: 350,
-    backgroundColor: 'blue',
-    marginBottom: 40
+    marginBottom: 40,
+    marginLeft: -20,
   },
 
   // welcome title
