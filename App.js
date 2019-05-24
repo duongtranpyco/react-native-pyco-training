@@ -7,15 +7,18 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, View, SafeAreaView, Text } from 'react-native';
+import { StyleSheet, View, SafeAreaView, Text, Image } from 'react-native';
+import { IMAGES } from './src/assets';
 
 export default class App extends Component {
 
   renderLogo = () => {
     return (
-      <View style={styles.logo}>
-
-      </View>
+      <Image
+        style={styles.logo}
+        source={IMAGES.logo}
+        resizeMode={'cover'}
+      />
     );
   };
 
@@ -38,7 +41,8 @@ export default class App extends Component {
   renderWelcomeText = () => {
     return (
       <Text style={styles.welcomeText}>
-        Whether you’re headed to work, the airport, or out on the town, Uber connects you with a reliable ride in minutes. One tap and a car comes directly to you.
+        Whether you’re headed to work, the airport, or out on the town, Uber connects you with a reliable ride in
+        minutes. One tap and a car comes directly to you.
       </Text>
     );
   };
@@ -80,7 +84,6 @@ const styles = StyleSheet.create({
   logo: {
     width: 137,
     height: 46,
-    backgroundColor: 'green',
     marginBottom: 40
   },
 
