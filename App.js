@@ -99,14 +99,16 @@ const styles = StyleSheet.create({
 
   // welcome title
   welcomeTitle: {
+    fontSize: 26,
     marginBottom: 20,
-    backgroundColor: 'yellow'
+    lineHeight: 43,
   },
 
   // welcome text,
   welcomeText: {
     marginBottom: 40,
-    backgroundColor: 'gray',
+    fontSize: 13.4,
+    lineHeight: 16,
   },
 
   // register button
