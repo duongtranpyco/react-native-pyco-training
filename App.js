@@ -52,7 +52,13 @@ export default class App extends Component {
   renderRegisterButton = () => {
     return (
       <View style={styles.registerButton}>
-
+        <Text style={styles.registerTitle}>
+          Register with Phone
+        </Text>
+        <Image
+          source={IMAGES.arrowRight}
+          style={styles.arrowRight}
+        />
       </View>
     );
   };
@@ -114,8 +120,23 @@ const styles = StyleSheet.create({
   // register button
   registerButton: {
     height: 50,
+    borderRadius: 5,
+
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'black'
+    backgroundColor: 'black',
+
+    flexDirection: 'row',
+    paddingHorizontal: 25
+  },
+  registerTitle: {
+    color: 'white',
+    fontSize: 14,
+    flex: 1,
+    textAlign: 'center'
+  },
+  arrowRight: {
+    width: 26,
+    height: 21
   }
 });
