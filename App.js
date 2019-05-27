@@ -8,7 +8,7 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, View, SafeAreaView, Text, Image, Dimensions, TouchableOpacity } from 'react-native';
-import { IMAGES } from './src/assets';
+import { FONTS, IMAGES } from './src/assets';
 
 export default class App extends Component {
 
@@ -110,6 +110,7 @@ const styles = StyleSheet.create({
     fontSize: 26,
     marginBottom: 20,
     lineHeight: 43,
+    fontFamily: FONTS.Oswald.Regular
   },
 
   // welcome text,
@@ -117,6 +118,7 @@ const styles = StyleSheet.create({
     marginBottom: 40,
     fontSize: 13.4,
     lineHeight: 16,
+    fontFamily: FONTS.Oswald.Light
   },
 
   // register button
@@ -135,7 +137,8 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 14,
     flex: 1,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontFamily: FONTS.Oswald.Regular
   },
   arrowRight: {
     width: 26,
