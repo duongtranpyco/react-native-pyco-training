@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
   View,
-  SafeAreaView,
   Text,
   Image,
   TouchableOpacity
@@ -11,16 +10,6 @@ import { IMAGES } from '../../assets';
 import styles from './Welcome.screen.styles';
 
 class WelcomeScreen extends Component {
-
-  renderLogo = () => {
-    return (
-      <Image
-        style={styles.logo}
-        source={IMAGES.logo}
-        resizeMode={'cover'}
-      />
-    );
-  };
 
   renderWelcomeImage = () => {
     return (
@@ -68,13 +57,10 @@ class WelcomeScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <SafeAreaView>
-          {this.renderLogo()}
           {this.renderWelcomeImage()}
           {this.renderWelcomeTitle()}
           {this.renderWelcomeText()}
           {this.renderRegisterButton()}
-        </SafeAreaView>
       </View>
     );
   }

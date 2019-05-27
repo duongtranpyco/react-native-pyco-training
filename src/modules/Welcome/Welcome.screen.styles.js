@@ -12,13 +12,6 @@ const styles = StyleSheet.create({
     paddingBottom: 43,
   },
 
-  // logo
-  logo: {
-    width: 137,
-    height: 46,
-    marginBottom: 40
-  },
-
   // welcome image
   welcomeImage: {
     width: Dimensions.get('window').width - 60,
