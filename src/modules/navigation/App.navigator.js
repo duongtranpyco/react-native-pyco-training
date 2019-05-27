@@ -1,6 +1,7 @@
 import { createStackNavigator } from 'react-navigation';
 
 import WelcomeContainer from '../Welcome/Welcome.container';
+import { COLORS } from '../../themes';
 
 const AppNavigator = createStackNavigator(
   {
@@ -11,8 +12,8 @@ const AppNavigator = createStackNavigator(
   {
     defaultNavigationOptions: {
       headerStyle: {
-        backgroundColor: 'white',
-          borderBottomWidth: 0,
+        backgroundColor: COLORS.white,
+        borderBottomWidth: 0,
       },
       headerTintColor: '#fff',
       headerTitleStyle: {

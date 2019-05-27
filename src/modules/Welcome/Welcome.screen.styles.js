@@ -1,10 +1,11 @@
 import { Dimensions, StyleSheet } from 'react-native';
 import { FONTS } from '../../assets';
+import { COLORS } from '../../themes';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5FCFF',
+    backgroundColor: COLORS.white,
 
     paddingHorizontal: 30,
     paddingTop: 37.5,
@@ -49,13 +50,13 @@ const styles = StyleSheet.create({
 
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'black',
+    backgroundColor: COLORS.black,
 
     flexDirection: 'row',
     paddingHorizontal: 25
   },
   registerTitle: {
-    color: 'white',
+    color: COLORS.white,
     fontSize: 14,
     flex: 1,
     textAlign: 'center',
