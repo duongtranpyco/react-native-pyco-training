@@ -10,7 +10,7 @@ import { IMAGES } from '../../assets';
 
 import styles from './Welcome.screen.styles';
 
-export default class WelcomeScreen extends Component {
+class WelcomeScreen extends Component {
 
   renderLogo = () => {
     return (
@@ -80,3 +80,4 @@ export default class WelcomeScreen extends Component {
   }
 }
 
+export default WelcomeScreen;
